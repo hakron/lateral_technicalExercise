@@ -1,7 +1,9 @@
 ## INFO
 
 You will need to create a .env file, and safe your API key as REACT_APP_LATERAL_API_CODE='YOURAPIKEY'
-In the project directory, you can run:
+In the project directory. 
+
+## You can run:
 
 ### `yarn`
  Install the packages
