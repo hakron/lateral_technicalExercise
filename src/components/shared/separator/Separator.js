@@ -4,8 +4,7 @@ import './Separator.css'
 export const Separator = ({isSlim}) => {
 
     const selectedStyle = isSlim ? 'slim' : 'thicc'
-
     return (
-        <hr className={selectedStyle} ></hr>
+        <hr className={`separator ${selectedStyle}`} ></hr>
     )
 }
