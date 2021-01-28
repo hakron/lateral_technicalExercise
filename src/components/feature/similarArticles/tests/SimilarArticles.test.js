@@ -31,7 +31,6 @@ const recommendedArticles = [{
 describe('SimilarArticles', () => {
     it('renders the similiar Articles', () => {
         render(<SimilarArticles recommendedArticles={recommendedArticles} />)
-        screen.debug()
         const { getByRole, getAllByTestId } = screen
         const title = getByRole("heading", { level: 2 })
         const articlesComponent = getAllByTestId('articleCard')
