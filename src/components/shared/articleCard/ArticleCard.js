@@ -40,7 +40,7 @@ export default function ArticleCard({ article }) {
 }
 
 // from the request we are getting back a date that is represented in a standard and sortable format that represents a UTC timedate
-// so a made a function to transform the date that we are getting back to the desire format
+// so i made a function to transform the date that we are getting back to the desire format
 
 const transformDate = (date) => {
     //create a new date object
