@@ -1,0 +1,15 @@
+.nav {
+    background-color: rgb(37, 112, 230);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.nav label {
+    color: #ffffff
+}
+
+.nav input {
+    margin: 0px 10px;
+    width: 50%;
+}

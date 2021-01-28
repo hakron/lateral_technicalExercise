@@ -1,0 +1,43 @@
+.articleCard-container {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    height: 125px;
+    margin-bottom: 25px;
+    box-shadow: rgb(136 136 136) 2px 2px 2px;
+}
+
+.articleCard-img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 125px;
+    width: 96px;
+}
+
+.articleCard-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.title {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+.extraInfo-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.extraInfo-container span.text {
+    color: #888888
+}
+.similarity { 
+    color: rgb(61, 206, 61);
+    font-weight: bold;
+}
+

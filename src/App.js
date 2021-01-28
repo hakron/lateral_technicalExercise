@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { postNewsRecommender } from './APi';
+import SimilarArticles from './components/feature/similarArticles/SimilarArticles';
+import { Error } from './components/shared/error/Error';
+import Nav from './components/shared/nav/Nav';
 
-function App() {
+const App = () => {
+  const [articlesRecommended, setArticlesRecommended] = useState([])
+  const [error, setError] = useState(false)
+
+  const handleSubmit = async (inputValue) => {
+    const response = await postNewsRecommender(inputValue)
+    if (response === 400) {
+      setArticlesRecommended([])
+      setError(true)
+    } else {
+      setError(false)
+      setArticlesRecommended(response.data)
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav handleSubmit={handleSubmit} />
+      {error && <Error />}
+      <SimilarArticles recommendedArticles={articlesRecommended} />
     </div>
   );
 }
+
+
 
 export default App;

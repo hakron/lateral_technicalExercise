@@ -1,0 +1,10 @@
+.thicc {
+    margin: 0px;
+    border-left: 2px solid rgb(191, 191, 191);
+    height: 15px;
+}
+
+.slim {
+    margin: 0px;
+    border-left: 1.5px solid rgb(191, 191, 191);
+}

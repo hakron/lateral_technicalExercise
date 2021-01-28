@@ -1,0 +1,19 @@
+.similarArticles-container {
+    margin: auto;
+    padding: 10px 20px;
+    background-color: rgba(231, 229, 234, 0.3);
+    height: 100%;
+    width: 500px;
+}
+
+.filters-container {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #888888
+}
+
+.filters-container span.filter {
+    color: #3483fb
+}
