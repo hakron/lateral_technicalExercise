@@ -17,7 +17,7 @@ const article = {
 
 describe('ArticleCard', () => {
     it('renders the desire props', () => {
-        render(<ArticleCard  article={article}/>)
+        render(<ArticleCard article={article} />)
         const { getByTestId } = screen
         expect(getByTestId('articleImage').src).toBe("http://localhost/thumbnail.jpg")
         expect(getByTestId('articleTitle').textContent).toBe("Europe's Security Chief Issues Dire Warning On Terrorist Threat From Drones")

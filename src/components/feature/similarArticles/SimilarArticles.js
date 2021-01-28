@@ -4,11 +4,10 @@ import { Separator } from "../../shared/separator/Separator";
 import './SimilarArticles.css'
 
 export default function SimilarArticles({ recommendedArticles }) {
-    console.log("recommendedArticles :>> ", recommendedArticles);
     return (
         recommendedArticles.length !== 0 && (
             <div
-            className='similarArticles-container'
+                className='similarArticles-container'
             >
                 <h2>Similar Articles</h2>
                 <div className='filters-container'>

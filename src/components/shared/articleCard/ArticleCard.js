@@ -20,7 +20,7 @@ export default function ArticleCard({ article }) {
         >
             <div>
                 <img data-testid='articleImage' src={thumbnail} alt={title} className='articleCard-img'
-/>
+                />
             </div>
             <div className='articleCard-content'>
                 <div>

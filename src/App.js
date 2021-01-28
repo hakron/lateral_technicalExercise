@@ -16,7 +16,7 @@ const App = () => {
       // set the error state to true to show the error msg
       setError(true)
     } else {
-       // set the error state to false. Done this for when we insert a bad URL and then we submit a good URL so the error msg disappears
+      // set the error state to false. Done this for when we insert a bad URL and then we submit a good URL so the error msg disappears
       setError(false)
       setArticlesRecommended(response.data)
     }

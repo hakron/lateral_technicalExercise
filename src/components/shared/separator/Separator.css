@@ -1,13 +1,13 @@
-.separator { 
-    display: block;
-    border: 0;
-    margin: 0px;
-    height: 15px;
+.separator {
+  display: block;
+  border: 0;
+  margin: 0px;
+  height: 15px;
 }
 .thicc {
-    border-left: 3px solid rgb(191, 191, 191);
+  border-left: 3px solid rgb(191, 191, 191);
 }
 
 .slim {
-    border-left: 2px solid rgb(191, 191, 191);
+  border-left: 2px solid rgb(191, 191, 191);
 }
